@@ -1,0 +1,9 @@
+# ignore npm dependencies
+node_modules/
+package.json
+babel.config.js
+.eslintrc.js
+package-lock.json
+
+# ignore test files
+*main.js
