@@ -30,10 +30,12 @@ function createTeacher(
 
   return teacher;
 }
+interface PrintTeacherFunction {
+  (firstName: string, lastName: string): string;
+}
 
-const teacher1: Teacher = createTeacher("John", "Doe", true, "City A", { yearsOfExperience: 5, contract: true });
-const teacher2: Teacher = createTeacher("Jane", "Smith", false, "City B", { contract: false });
-
-console.log(teacher1);
-console.log(teacher2);
-
+const printTeacher: PrintTeacherFunction = (firstName, lastName) => {
+  const firstLetter = firstName.charAt(0).toUpperCase();
+  const fullName = `${firstLetter}. ${lastName}`;
+  return fullName;
+};
