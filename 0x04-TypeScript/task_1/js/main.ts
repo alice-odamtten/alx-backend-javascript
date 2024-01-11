@@ -38,4 +38,44 @@ const printTeacher: PrintTeacherFunction = (firstName, lastName) => {
   const firstLetter = firstName.charAt(0).toUpperCase();
   const fullName = `${firstLetter}. ${lastName}`;
   return fullName;
-};
+ };
+
+
+interface StudentInterface {
+  firstName: string;
+  lastName: string;
+}
+
+
+interface StudentClass {
+  workOnHomework(): string;
+  displayName(): string;
+}
+
+
+class Student implements StudentClass {
+  private firstName: string;
+  private lastName: string;
+
+
+  constructor(studentInfo: StudentInterface) {
+    this.firstName = studentInfo.firstName;
+    this.lastName = studentInfo.lastName;
+  }
+
+  workOnHomework(): string {
+    return "Currently working";
+  }
+
+
+  displayName(): string {
+    return this.firstName;
+  }
+}
+
+
+
+
+
+
+
