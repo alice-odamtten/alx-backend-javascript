@@ -58,3 +58,15 @@ function executeWork(employee: Director | Teacher): void {
   }
 }
 
+type Subjects = 'Math' | 'History';
+
+function teachClass(todayClass: Subjects): string {
+  if (todayClass === 'Math') {
+    return 'Teaching Math';
+  } else if (todayClass === 'History') {
+    return 'Teaching History';
+  } else {
+    // Handle other cases if needed
+    return 'Not teaching any specific subject';
+  }
+}
