@@ -6,8 +6,8 @@ const fs = require('fs');
 function countStudents(path) {
   return new Promise((resolve, reject) => {
     fs.readFile(path, 'utf8')
-      .then(data => {
-        const lines = data.split('\n').filter(line => line.trim() !== '');
+      .then((data) => {
+        const lines = data.split('\n').filter((line) => line.trim() !== '');
         console.log(`Number of students: ${lines.length}`);
         const cs = [];
         const swe = [];
@@ -26,7 +26,7 @@ function countStudents(path) {
         console.log(`Number of students in SWE: ${swe.length}. List: ${swe.join(', ')}`);
         resolve(); // Resolve the Promise after processing data
       })
-      .catch(err => {
+      .catch(() => {
         reject(new Error('Cannot load the database'));
       });
   });
