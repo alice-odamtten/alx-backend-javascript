@@ -1,4 +1,6 @@
-// coments
+/**
+ * function calls the Utils.calculateNumber
+ */
 
 const Utils = require('./utils');
 

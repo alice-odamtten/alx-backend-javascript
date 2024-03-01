@@ -1,4 +1,6 @@
-//comments
+/**
+ * test for sendPaymentRequestToApi
+ */
 
 const sinon = require('sinon');
 const assert = require('assert');

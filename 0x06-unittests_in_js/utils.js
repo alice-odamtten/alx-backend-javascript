@@ -1,4 +1,6 @@
-//comment
+/**
+ * utils module
+ */
 
 const Utils = {
     calculateNumber(type, a, b) {
