@@ -1,4 +1,6 @@
-//comments
+/**
+ * function will take an argument called success (boolean)
+ */
 
 function getPaymentTokenFromAPI(success){
     if (success)

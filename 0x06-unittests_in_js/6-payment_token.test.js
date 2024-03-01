@@ -1,4 +1,6 @@
-//comments
+/**
+ *  test the result of getPaymentTokenFromAPI(true
+ */
 
 const getPaymentTokenFromAPI = require('./6-payment_token');
 const assert = require('assert');
