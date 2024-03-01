@@ -1,4 +1,6 @@
-//comment
+/**
+ * test payment
+ */
 
 const sinon = require('sinon');
 const Utils = require('./utils');
