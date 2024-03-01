@@ -1,4 +1,6 @@
-//comments
+/**
+ * test spy on Utils.calculateNumber
+ */
 
 const sinon = require('sinon');
 const Utils = require('./utils');
